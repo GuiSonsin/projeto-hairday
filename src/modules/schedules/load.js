@@ -10,10 +10,10 @@ export async function schedulesDay(){
     const date = selectedDate.value
 
     // busca na api os agendamentos
-    const dailySchedules = await scheduleFetchByDay({ date })
-    
-    // exibe os agendamentos
-    scheduleShow({ dailySchedules })
+    const dailySchedules = await scheduleFetchByDay({ date }) 
+
+    // exibe os agendamentos 
+    scheduleShow({ dailySchedules }) 
 
     // renderiza as horas disponiveis
     hoursLoad({ date, dailySchedules })
